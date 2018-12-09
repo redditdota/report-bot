@@ -42,7 +42,7 @@ for report in report_stream:
         mods.append(mod)
 
     if len(mods) > 0:
-        message = "[This submission]({}) received a report from: \n\n".format(report.url) + message
+        message = "[This submission]({}) received a report from: \n\n".format(report.link_permalink) + message
         title = "Report from {}".format(", ".join(mods))
         print(mods, message)
         #user_subreddit.message(title, message)
